@@ -1,0 +1,115 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 18px;
+}
+
+.container{
+    margin:9vw;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    flex:2 1 100%;
+}
+
+.title h3{
+    font-size: 2rem;
+    font-family: 'PT Serif';
+    font-weight: 700;
+}
+
+.about-us h4{
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1vw;
+}
+
+.about-us p{
+    font-size: 1rem;
+    font-family: 'Poppins';
+    line-height: 1.5rem;
+    margin-right: 6.5vw;
+}
+
+.team-photos{
+    margin-top: 8vw;
+    padding: 20px;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+}
+
+.image-class{
+   position: relative;
+    
+}
+
+img{
+    height: 80%;
+    width: 80%;
+
+}
+
+.image-class p{
+    font-family: 'Poppins';
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1vw;
+}
+
+.down{
+    padding-top: 10vw;
+}
+
+.top{
+    font-size: 0.75rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+}
+
+@media only screen
+       and (max-width:650px) {
+        .team-photos{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        header{
+            flex-direction: column;
+        }
+        
+        header .title{
+            margin-bottom: 4vw;
+        }
+
+         .about-us h4{
+             margin-bottom: 2vw;
+         }
+        html{
+            font-size: 14px;
+        }
+        .down{
+            padding-top: 0;
+        }
+        .mob{
+            margin-top: 90px;
+        }
+}
